@@ -53,9 +53,11 @@
 				width: 900px;
 				display: none;
 			}
+
 	</style>
 </head>
-<body>
+
+<body style="background: linear-gradient(to bottom, rgba(248, 249, 244, 0.4), rgba(224, 224, 220, 0.97)), url(chef.png); no-repeat; background-size: cover; background-attachment: fixed;">
 	<header>
 		<center>
 		<h1 id="change" class="main" onmouseover="document.getElementById('change').innerHTML='Bon Apettit'" onmouseout="document.getElementById('change').innerHTML='Lets Eat'">Lets Eat</h1>
@@ -136,6 +138,7 @@
 			<img class="scroll" src="scroll11.png">
 			
 		</div>	
+		
 		<script type="text/javascript">
 		//declare variable//
 			var pics = 0;
@@ -145,7 +148,7 @@
 			function movepic() {
 			    var p;
 			    var x = document.getElementsByClassName("scroll");
-			    //if pics number is zero display none
+			    //  displaying all array elements as none
 			    for (p = 0; p < x.length; p++) {
 			       x[p].style.display = "none";  
 			    }
