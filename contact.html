@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>recipes</title>
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="pages.css">
+	
+	<style type="text/css">
+		 input[type=button]{ 
+      color: black;
+      
+      padding: 5px;
+      width: auto;
+      font-weight: bold;
+
+
+      }
+      input[type=button]:hover{
+        border:solid;
+        background-color: #e8967d;
+      }
+      form {
+      		position: absolute;
+      		top: 290px;
+			margin: 100px;
+			border:  5px ridge blue; 
+  			outline: 5px groove red;
+			background: rgb(249, 238, 214);
+			line-height: 50px;
+			font-family: 'Gloria Hallelujah', cursive;
+			padding: 20px;
+			width: 500px;
+			margin-left: 400px;
+      }
+      input[type=text]{
+        
+        background-color: #d8f7d4;
+
+      }
+      input[type=number]{
+        background-color: #d8f7d4;
+
+      }
+     
+      input[type=text]:focus{
+      
+        color: black;
+        width: 400px;
+        
+      }
+	</style>
+</head>
+<body>
+	<header>
+		<center>
+		<h1 id="change" class="main" onmouseover="document.getElementById('change').innerHTML='Bon Apettit'" onmouseout="document.getElementById('change').innerHTML='Lets Eat'">Lets Eat</h1>
+
+					<ul>
+						<li><a href="home.html">HOME</a> </li>
+						<li><a href="me.html">ABOUT</a> </li>
+						<li><a href="recipes.html">RECIPES</a> </li>
+						<li><a href="chefs.html">CHEFS</a> </li>
+						<li><a href="budget.html">BUDGET </a> </li>
+						<li><a href="videos.html">VIDEOS</a> </li>
+
+					</ul>
+		</center>			
+	</header>
+
+		 	<form>
+			      <h3>lets Connect...!!!</h3>
+			      First Name: <br>
+			      <input type="text" name="firstname"> <br>
+			      Last Name: <br>
+			      <input type="text" name="lastname"> <br>
+			      Location: <br>
+			      <input type="text" name="location"><br>
+			      Email: <br>
+			      <input type="text" name="Email"> <br>
+			      Phone number:<br>
+			      <input type="number" name="phonenumber">
+			      <br>
+			      Gender <br>
+			      <input type="radio" name="gender" value="Female">
+			      Female <br>
+			      <input type="radio" name="gender" value="Male">
+			      Male <br><br>
+			      <input type="button" name="submit" value="submit">
+			      
+      
+   			 </form>
+<footer>
+		<h2><a href="contact.html"> contact me</a></h2><a href="https://www.facebook.com/"><img class="icon" src="facebook.png"></a>
+	</footer>
+	</footer>
+</body>
+</html>

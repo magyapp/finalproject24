@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="pages.css">
+
+	<style type="text/css">
+		
+		
+		
+			
+			.container{
+				position: absolute;
+				margin-top: 400px;
+				margin-left: 250px;
+				
+				width: 900px;
+				background: -webkit-linear-gradient(left, #3f5f93 , #bdc685);
+				padding: 10px;
+				border:  5px ridge blue; 
+  				outline: 5px groove red;
+			}
+
+			.food {
+				display: inline-block;
+				height: 130px;
+				width: 200px;
+				margin: 20px;
+			}
+			.food:hover {
+				box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+				transform: scale(1.1);
+				transition: all 0.2s ease-in-out;
+			}
+			p {
+				font-family: 'Gloria Hallelujah', cursive;
+			}
+			hr {
+				size: 10px;
+			}
+			
+			.scroll-container {
+				position: absolute;
+				border: 1px solid black;
+				margin-top: 70px;
+				margin-left: 255px;
+			}
+			.scroll {
+				height: 255px;
+				width: 900px;
+				display: none;
+			}
+	</style>
+</head>
+<body>
+	<header>
+		<center>
+		<h1 id="change" class="main" onmouseover="document.getElementById('change').innerHTML='Bon Apettit'" onmouseout="document.getElementById('change').innerHTML='Lets Eat'">Lets Eat</h1>
+
+					<ul>
+						<li><a href="home.html">HOME</a> </li>
+						<li><a href="me.html">ABOUT</a> </li>
+						<li><a href="recipes.html">RECIPES</a> </li>
+						<li><a href="chefs.html">CHEFS</a> </li>
+						<li><a href="budget.html">BUDGET </a> </li>
+						<li><a href="videos.html">VIDEOS</a> </li>
+						
+
+					</ul>
+		</center>			
+	</header>
+	
+	</div>
+	<center>
+		<div class="container">
+			<p> What do  you want to eat...?</p>
+			<hr>
+				<a href="https://www.timeout.com/newyork/restaurants/nycs-26-best-tacos-1">
+						<img  class="food" src="tacos.png">
+						
+				</a>
+
+				<a href="https://www.bloomberg.com/news/photo-essays/2016-04-21/new-york-s-11-best-burgers-according-to-top-chefs">
+						<img class="food" src="burger.png">
+						
+				</a>
+
+				<a href="https://www.thrillist.com/eat/new-york/the-best-pizza-in-new-york-city">
+						<img class="food" src="pizza.png"> <br>
+						
+				</a>
+				<a href="http://gothamist.com/2014/07/02/the_10_best_hot_dogs_in_nyc.php">
+						<img class="food" src="hotdogs.png">
+						
+				</a>
+				<a href="https://www.yelp.com/search?find_desc=Spumoni+Ice+Cream&find_loc=New+York%2C+NY">
+						<img class="food" src="spumoni.png">
+						
+				</a>
+				<a href="http://www.villagevoice.com/restaurants/the-10-best-bagel-shops-in-nyc-6516342">
+						<img class="food" src="bagel.png"> <br>
+						
+				</a>
+				<a href="https://www.yelp.com/search?find_desc=Best+Knish&find_loc=New+York%2C+NY">
+						<img class="food" src="knish.png">
+						
+				</a>
+				<a href="https://foursquare.com/top-places/new-york-city/best-places-general-tsos-chicken">
+						<img class="food" src="generaltsochicken.png">
+						
+				</a>
+				<a href="https://www.thrillist.com/eat/new-york/best-pastrami-in-nyc">
+						<img class="food" src="pastrami.png"> <br>
+						
+				</a>
+			
+		</div>
+		
+	</center>
+	
+		<!--images scrolling accross screen-->
+		<div class="scroll-container">
+			<img class="scroll" src="scroll1.png">
+			<img class="scroll" src="scroll2.png">
+			<img class="scroll" src="scroll3.png">
+			<img class="scroll" src="scroll4.png">
+			<img class="scroll" src="scroll5.png">
+			<img class="scroll" src="scroll6.png">
+			<img class="scroll" src="scroll7.png">
+			<img class="scroll" src="scroll8.png">
+			<img class="scroll" src="scroll9.png">
+			<img class="scroll" src="scroll10.png">
+			<img class="scroll" src="scroll11.png">
+			
+		</div>	
+		<script type="text/javascript">
+		//declare variable//
+			var pics = 0;
+			movepic();
+
+			//call function//
+			function movepic() {
+			    var p;
+			    var x = document.getElementsByClassName("scroll");
+			    //if pics number is zero display none
+			    for (p = 0; p < x.length; p++) {
+			       x[p].style.display = "none";  
+			    }
+			    pics++; //scroll pics if pics is not zero
+			    if (pics > x.length) {pics = 1}    
+			    x[pics-1].style.display = "block";  
+				// Change image every 2 seconds
+			    setTimeout(movepic, 2000); 
+}
+				
+			</script>
+	<footer>
+		<h2><a href="contact.html"> contact me</a></h2> <a href="https://www.facebook.com/"><img class="icon" src="facebook.png"></a>
+	</footer>
+</body>
+</html>

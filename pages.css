@@ -1,0 +1,74 @@
+body {
+			margin: 0;
+			height: auto;
+			width: 100%;
+			background: #e2e8ce;
+			float: center;
+		}
+		header {
+			background: url('chef.gif');
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 300px;
+			width: 100%;
+			z-index: -1;
+			padding-top: 10px;
+		}
+		.main	{
+			color: white;
+		}
+			li {
+				
+				display: inline-block;
+
+				
+			}
+			ul {
+				padding-top: 20px; 
+				word-spacing: 70px;
+			}
+			li a {
+				position: relative;
+				text-align: center;
+				
+				
+				color: white;
+				text-align: center;
+				text-decoration: none;
+
+				
+			}
+
+			li a:hover {
+				font-size: 250%;
+				font-weight: 50px;
+				color: red;
+			}
+			
+			
+		footer {
+
+			margin-top: 80%;
+			
+			
+		}
+		h2 a {
+			text-decoration: none;
+			margin-left: 595px;
+			color: black;
+		}
+		footer:hover  a{
+			color: red;
+		}
+		#change{
+			font-size: 6em;
+		}
+		.icon {
+			float: right;
+			height: 50px;
+			width: 50px;
+			position: relative;
+			top: -50px;
+			left: -300px;
+
+		}
